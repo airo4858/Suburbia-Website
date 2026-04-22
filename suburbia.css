@@ -189,9 +189,20 @@ button:hover {
 }
 
 #about p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     font-family: 'Gimlet', Arial, sans-serif;
 }
 
+#about h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+}
+
+#about li {
+    font-family: 'Gimlet', Arial, sans-serif;
+}
 /* Features */
 #features ul {
     list-style: disc;
