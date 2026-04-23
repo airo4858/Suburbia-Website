@@ -24,9 +24,22 @@
     <!-- Header / Navigation -->
     <header>
         <nav>
-            <h1>Welcome to Suburbia!</h1>
+            <h1><a href="#">Welcome to Suburbia!</a></h1>
             <ul>
-                <li><a href="#about">Documentation</a></li>
+                <li class="dropdown">
+                    <a href="#about" class="dropbtn">Documentation ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#introduction">Introduction</a>
+                        <a href="#rmpp">RMPP</a>
+                        <a href="#weeks2">Weeks 1–3</a>
+                        <a href="#weeks4">Weeks 4–5</a>
+                        <a href="#weeks6">Weeks 6–7</a>
+                        <a href="#weeks8">Weeks 8–9</a>
+                        <a href="#weeks10">Weeks 10–11</a>
+                        <a href="#weeks12">Weeks 12–13</a>
+                        <a href="#final">Final Weeks</a>
+    </div>
+</li>
             </ul>
         </nav>
     </header>
@@ -92,7 +105,7 @@
             way home after being dropped off in a mysterious neighborhood that seems
             to never end.
         </p>
-        <h3>Introduction:</h3>
+        <h3 id="introduction">Introduction:</h3>
         <p>
             When our group first came together to create our capstone project for 
             Research Methods and Professional Practice (RMPP), we wanted to make a 
@@ -111,7 +124,7 @@
             and the unique experience that that can provide, along with letting us formulate 
             certain events and situations that we can put our players into.
         </p>
-        <h3>RMPP:</h3>
+        <h3 id="rmpp">RMPP:</h3>
         <p>
             Throughout our semester of RMPP, we ran feasibility tests to see whether or not 
             our idea was feasible enough to work on until completion, we interviewed experts 
@@ -140,7 +153,7 @@
             sure items weren’t just local props, but actually worked in multiplayer.
         </p>
         <img src="Welcome to Suburbia Documentation_Timeline/images/image12.png" alt="1">
-        <h3>Weeks 2-3:</h3>
+        <h3 id="weeks2">Weeks 1-3:</h3>
         <p>
             We dived head first into the Spring semester, making sure we were on track and each 
             week actively contributing to our capstone project and having frequent meetings to 
@@ -173,7 +186,8 @@
             the neighborhood block to look, and how we can design it so that it seems like it 
             seamlessly repeats.
         </p>
-        <h3>Weeks 4-5:</h3>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image13.png" alt="1">
+        <h3 id="weeks4">Weeks 4-5:</h3>
         <p>
             During weeks 4-5, we fully figured out the scale that we wanted the neighborhood to look 
             like, while also adding fog to create an atmosphere that fits the aesthetic that we wanted. 
@@ -204,6 +218,7 @@
             let us not have to create a huge number of blocks that would slow down our computers and 
             would be bad for optimization for our game.
         </p>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image10.png" alt="1">
         <p>
             For the sake of our capstone and the Atlas Expo, we had to figure out what we wanted the 
             core game loop to look like for our project, and we decided on creating a demo that would 
@@ -255,7 +270,7 @@
                 wanted to accomplish with our game, while also having players experience an engaging environment.
             </p>
         </p>
-        <h3>Weeks 6-7:</h3>
+        <h3 id="weeks6">Weeks 6-7:</h3>
         <p>
             In a previous week, we got feedback from a professional that we should start playtesting our 
             puzzles with people in a low fidelity way, so we came up with basic puzzles that could be 
@@ -296,7 +311,8 @@
             demon she calls Suburbia, who lives underneath the surface of the neighborhood, and feeds off those 
             who get lost. 
         </p>
-        <h3>Weeks 8-9:</h3>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image19.png" alt="1">
+        <h3 id="weeks8">Weeks 8-9:</h3>
         <p>
             For weeks 8 through 9, we started implementing the puzzles and the bedrooms they would take place in, 
             we designed the rooms to account for the poem that we wrote, and made models for a toy piano and an 
@@ -315,6 +331,7 @@
             we felt like we were building real puzzle game logic instead of just movement and environment. We also 
             added more interactivity around the neighborhood, making mailboxes openable and more NPC’s to see and talk to.
         </p>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image36.png" alt="1">
         <p>
             We met up with a Game Development Club in Boulder, where we gave a presentation about our game and was able 
             to get a lot of valuable playtesting and feedback from other game developers. A lot of people really enjoyed 
@@ -328,7 +345,8 @@
             The 3rd and final cutscene shows the players using the baseball bat to break out of the bedroom window, and 
             fall into the cellar doors as they wake up in an underground basement and must escape. 
         </p>
-        <h3>Weeks 10-11:</h3>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image29.png" alt="1">
+        <h3 id="weeks10">Weeks 10-11:</h3>
         <p>
             For weeks 10 through 11, we implemented a Quest Hub system that gives players goals and missions so that we 
             could more easily guide them through our game. When you first load into the game, it gives you the quest to 
@@ -343,6 +361,7 @@
             progress. We also added big exclamation marks that will show up above an NPC’s head when they are needed for 
             a quest, so players don’t get too lost trying to find someone.
         </p>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image4.png" alt="1">
         <p>
             We also added our first human models into the game, with functioning animations that correlate to whether 
             the NPC’s are walking through the neighborhood, standing still when players approach them, or talking to the 
@@ -359,7 +378,8 @@
             giant tentacles that will appear in the distance as the game progresses, and they become more frequent the 
             farther you go.
         </p>
-        <h3>Weeks 12-13:</h3>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image52.png" alt="1">
+        <h3 id="weeks12">Weeks 12-13:</h3>
         <p>
             During weeks 12 through 13, we started implementing the cohesion between the different sections of our game 
             that we had created. To make sure both players get into the game at the same time, we added a lobby that takes 
@@ -370,6 +390,7 @@
             player count is reached, which prevents half-loaded sessions and weird desync situations. It also let us keep 
             the tone consistent, since the bus lobby feels like an in-world waiting room instead of a detached UI screen.
         </p>
+        <img src="Welcome to Suburbia Documentation_Timeline/images/image41.png" alt="1">
         <p>
             Towards the end, we implemented a world conveyor style trick where it feels like the players are moving forward 
             through space, but really the environment is being shifted in a controlled way. This was partly for performance, 
@@ -389,7 +410,7 @@
             interacting with the progression we have implemented for the sake of the demo. Also for the sake of the demo, 
             we storyboarded a trailer that we can show to passerbys.
         </p>
-        <h3>Final Weeks:</h3>
+        <h3 id="final">Final Weeks:</h3>
         <p>
             During the last few weeks, we really started working on creating something presentable for the ATLAS Expo. We 
             needed to finish up our documentation, make a video/trailer, and make a website. This was also the time we did 
@@ -401,7 +422,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>Placeholder</p>
+        <p>©Can of Worms Co.</p>
     </footer>
 
     <!-- Scripts -->

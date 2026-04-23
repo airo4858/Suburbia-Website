@@ -19,6 +19,52 @@
     font-style: normal;
 }
 
+/* ===== Documentation Dropdown ===== */
+
+.dropdown {
+    position: relative;
+}
+
+/* Keep nav link styling consistent */
+.dropbtn {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-family: 'Gimlet Bold', Arial, sans-serif;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* aligns to right side of nav */
+    top: 100%;
+    background-color: #1dd2ff; /* matches your header */
+    min-width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #020617;
+    text-decoration: none;
+    font-family: 'Gimlet', Arial, sans-serif;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+    background-color: #0f6c83; /* matches your cards */
+    color: #ffffff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -201,6 +247,7 @@ button:hover {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     font-size: 1.5rem;
+    scroll-margin-top: 80px;
 }
 
 #about li {
