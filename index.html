@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://use.typekit.net/uvz3yne.css">
     <link rel="stylesheet" href="suburbia.css">
 </head>
 <body>
@@ -24,7 +25,11 @@
     <!-- Header / Navigation -->
     <header>
         <nav>
-            <h1><a href="#">Welcome to Suburbia!</a></h1>
+            <h1>
+                <a href="#">
+                    <span class="nav-brand__name">Welcome to Suburbia!</span>
+                </a>
+            </h1>
             <ul>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#timeline">Timeline</a></li>
@@ -48,57 +53,95 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <img src="suburbia_title_card.png" alt="title card">
-        <p>A two player horror experience to escape the never ending suburbs!</p>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iVzEj0WU5bo?si=muZp3V_wi6edzutN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="hero-stage" data-parallax-hero>
+            <img
+                class="hero-stage__image"
+                src="suburbia_title_card.png"
+                alt="Welcome to Suburbia title card"
+                data-parallax-layer
+            >
+            <div class="hero-stage__content">
+                <div class="hero-stage__actions">
+                    <a class="hero-link" href="#trailer">Watch Trailer</a>
+                    <a class="hero-link hero-link--secondary" href="#team">Meet the Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trailer">
+        <p class="section-label">the trailer</p>
+        <div class="split-section split-section--trailer">
+            <div class="split-section__intro">
+                <h2>Watch the Trailer</h2>
+            </div>
+            <div class="editorial-panel">
+                <p class="editorial-panel__label">gameplay preview</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iVzEj0WU5bo?si=muZp3V_wi6edzutN" title="Welcome to Suburbia trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="team">
-    <h2>Meet the Creators</h2>
+        <p class="section-label">the creators</p>
+        <div class="split-section split-section--team">
+            <div class="split-section__intro">
+                <h2>Meet the Creators</h2>
+            </div>
 
-    <div class="team-grid">
-        <div class="team-member">
-            <img src="max.JPG" alt="Creator 1">
-            <h3>Max Dietz</h3>
-            <p>Systems Designer</p>
-            <p>Game Programmer</p>
-            <p>Sound Designer</p>
-            <a href="https://www.linkedin.com/in/max-dietz-546b7132b/">LinkedIn</a>
-        </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="max.JPG" alt="Creator 1">
+                    <h3>Max Dietz</h3>
+                    <p>Systems Designer</p>
+                    <p>Game Programmer</p>
+                    <p>Sound Designer</p>
+                    <a href="https://www.linkedin.com/in/max-dietz-546b7132b/">LinkedIn</a>
+                </div>
 
-        <div class="team-member">
-            <img src="micah.jpeg" alt="Creator 2">
-            <h3>Micah Higgins</h3>
-            <p>Environment Designer</p>
-            <p>Narrative Designer</p>
-            <p>Animator</p>
-            <a href="https://www.linkedin.com/in/micah-higgins-4870a3379/">LinkedIn</a>
-        </div>
+                <div class="team-member">
+                    <img src="micah.jpeg" alt="Creator 2">
+                    <h3>Micah Higgins</h3>
+                    <p>Environment Designer</p>
+                    <p>Narrative Designer</p>
+                    <p>Animator</p>
+                    <a href="https://www.linkedin.com/in/micah-higgins-4870a3379/">LinkedIn</a>
+                </div>
 
-        <div class="team-member">
-            <img src="noah.JPEG" alt="Creator 3">
-            <h3>Noah Wagner</h3>
-            <p>Network Programmer</p>
-            <p>Multiplayer Engineer</p>
-            <p>Animator</p>
-            <a href="https://www.linkedin.com/in/noah-wagner-77789a262/">LinkedIn</a>
-        </div>
+                <div class="team-member">
+                    <img src="noah.JPEG" alt="Creator 3">
+                    <h3>Noah Wagner</h3>
+                    <p>Network Programmer</p>
+                    <p>Multiplayer Engineer</p>
+                    <p>Animator</p>
+                    <a href="https://www.linkedin.com/in/noah-wagner-77789a262/">LinkedIn</a>
+                </div>
 
-        <div class="team-member">
-            <img src="aidan.jpeg" alt="Creator 4">
-            <h3>Aidan Rogers</h3>
-            <p>Game Designer</p>
-            <p>Game Programmer</p>
-            <p>Animator</p>
-            <a href="https://www.linkedin.com/in/aidan-rogers-06809738b/">LinkedIn</a>
+                <div class="team-member">
+                    <img src="aidan.jpeg" alt="Creator 4">
+                    <h3>Aidan Rogers</h3>
+                    <p>Game Designer</p>
+                    <p>Game Programmer</p>
+                    <p>Animator</p>
+                    <a href="https://www.linkedin.com/in/aidan-rogers-06809738b/">LinkedIn</a>
+                </div>
+            </div>
         </div>
-    </div>
     </section>
 
     <section id="timeline">
-        <img src="suburbia_timeline.png" alt="Project image">
+        <p class="section-label">the project</p>
+        <div class="split-section split-section--timeline">
+            <div class="split-section__intro">
+                <h2>The Timeline</h2>
+            </div>
+            <div class="editorial-panel editorial-panel--timeline">
+                <p class="editorial-panel__label">development map</p>
+                <img src="suburbia_timeline.png" alt="Project image">
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
